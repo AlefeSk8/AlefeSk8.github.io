@@ -1,0 +1,100 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 6rem;
+  height: 3.5rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 3.5rem;
+  transition: .4s;
+  /* background-color: #ccc; */
+  
+  border: .2rem solid white;
+  /* Imagem de fundo no toggle switch */
+  background-image: url('us_br-flags.png');
+  background-size: cover;
+}
+
+.switch:hover .slider {
+  background-color: #ccc; /* Manter a cor de fundo visível ao fazer o hover */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2.4rem;
+  width: 2.4rem;
+  right: .45rem;
+  left: .45rem;
+  top: .35rem;
+  bottom: .35rem;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+  border: .2rem solid white;
+  z-index: 1;
+}
+
+.switch:hover .slider:before {
+  transform: translateX(2.4rem); /* Mover a bolinha para o lado oposto ao fazer o hover */
+}
+
+input:checked + .slider {
+  background-color: #109939;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #109939;
+}
+
+input:checked + .slider:before {
+  transform: translateX(2.4rem);
+}
+
+input:focus + .slider:before {
+  box-shadow: 0 0 1px #109939;
+}
+
+.flag {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2rem;
+  height: 2rem;
+}
+
+.slider.us-flag:before {
+  background-image: url('us-flag.png');
+  background-size: cover
+}
+
+.slider.br-flag:before {
+  background-image: url('br-flag.png');
+  background-size: cover;
+}
+
+.switch:hover .us-flag:before {
+  background-image: url('br-flag.png')
+}
+
+.switch:hover .br-flag:before {
+  background-image: url('us-flag.png')
+}
+
+.slider:checked:before {
+  transform: translateX(2.4rem);
+}

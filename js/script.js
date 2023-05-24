@@ -15,7 +15,7 @@ window.onscroll = () => {
       let offset = section.offsetTop - 100;
       let height = section.offsetHeight;
       let id = section.getAttribute('id');
-
+      
       if (top >= offset && top < offset + height) {
          navlinks.forEach(link => {
             link.classList.remove('active');
@@ -27,16 +27,16 @@ window.onscroll = () => {
          section.classList.remove('show-animate');
       }
    })
-
+   
    let header = document.querySelector('header');
-
+   
    header.classList.toggle('sticky', window.scrollY > 100);
-
+   
    menuIcon.classList.remove('bx-x');
    navBar.classList.remove('active');
-
+   
    //animation footer on scroll
    let footer = document.querySelector('footer');
-
+   
    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight)
 }
