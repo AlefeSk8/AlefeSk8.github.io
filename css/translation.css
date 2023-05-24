@@ -24,7 +24,7 @@
   
   border: .2rem solid white;
   /* Imagem de fundo no toggle switch */
-  background-image: url('us_br-flags.png');
+  background-image: url('../images/us_br-flags.png');
   background-size: cover;
 }
 
@@ -78,21 +78,21 @@ input:focus + .slider:before {
 }
 
 .slider.us-flag:before {
-  background-image: url('us-flag.png');
+  background-image: url('../images/us-flag.png');
   background-size: cover
 }
 
 .slider.br-flag:before {
-  background-image: url('br-flag.png');
+  background-image: url('../images/br-flag.png');
   background-size: cover;
 }
 
 .switch:hover .us-flag:before {
-  background-image: url('br-flag.png')
+  background-image: url('../images/br-flag.png')
 }
 
 .switch:hover .br-flag:before {
-  background-image: url('us-flag.png')
+  background-image: url('../images/us-flag.png')
 }
 
 .slider:checked:before {
