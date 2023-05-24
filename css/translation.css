@@ -1,8 +1,8 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 6rem;
-  height: 3.5rem;
+  width: 3.875rem;
+  height: 2.13rem;
 }
 
 .switch input {
@@ -18,11 +18,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 3.5rem;
+  border-radius: 2.5rem;
   transition: .4s;
   /* background-color: #ccc; */
   
-  border: .2rem solid white;
+  border: .1rem solid white;
   /* Imagem de fundo no toggle switch */
   background-image: url('../images/us_br-flags.png');
   background-size: cover;
@@ -35,21 +35,19 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 2.4rem;
-  width: 2.4rem;
-  right: .45rem;
-  left: .45rem;
-  top: .35rem;
-  bottom: .35rem;
+  height: 1.45rem;
+  width: 1.45rem;
+  left: .25rem;
+  top: .2rem;
   background-color: white;
   border-radius: 50%;
   transition: .4s;
-  border: .2rem solid white;
+  border: .1rem solid white;
   z-index: 1;
 }
 
 .switch:hover .slider:before {
-  transform: translateX(2.4rem); /* Mover a bolinha para o lado oposto ao fazer o hover */
+  transform: translateX(1.65rem); /* Mover a bolinha para o lado oposto ao fazer o hover */
 }
 
 input:checked + .slider {
@@ -61,7 +59,7 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(2.4rem);
+  transform: translateX(1.65rem);
 }
 
 input:focus + .slider:before {
@@ -96,5 +94,5 @@ input:focus + .slider:before {
 }
 
 .slider:checked:before {
-  transform: translateX(2.4rem);
+  transform: translateX(1.65rem);
 }
