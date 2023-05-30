@@ -138,7 +138,7 @@
    border: .1rem solid var(--main-color);
    border-radius: .8rem;
    font-size: 1rem;
-   font-weight: 600;
+   font-weight: 700;
    letter-spacing: 0.1rem;
    color: var(--bg-color);
    z-index: 1;
@@ -148,6 +148,7 @@
 
 .buttonBox .button:hover {
    color: var(--main-color);
+   font-weight: 700;
 }
 
 .buttonBox .button:nth-child(2) {
@@ -187,6 +188,10 @@
    justify-content: space-between;
 }
 
+.homeSci i {
+   font-size: 1.875rem;
+}
+
 .homeSci a {
    position: relative;
    display:  inline-flex;
@@ -201,6 +206,10 @@
    color: var(--main-color);
    z-index: 1;
    overflow: hidden;
+}
+
+.homeSci a:hover {
+   color: var(--bg-color);
 }
 
 .homeSci a::before {
