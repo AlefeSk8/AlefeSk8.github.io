@@ -2,7 +2,8 @@
   position: relative;
   display: inline-block;
   width: 3.875rem;
-  height: 2.13rem;
+  height: 2.25rem;
+  align-items: center;
 }
 
 .switch input {
@@ -35,10 +36,10 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 1.45rem;
-  width: 1.45rem;
+  height: 1.5rem;
+  width: 1.5rem;
   left: .25rem;
-  top: .2rem;
+  top: .25rem;
   background-color: white;
   border-radius: 50%;
   transition: .4s;
